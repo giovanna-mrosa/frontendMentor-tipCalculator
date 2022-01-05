@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./images/logo.svg" alt="" class="logo" />
+        <div class="main-box">
+          <section class="box-1">
+            <div class="bill-box">
+              <p class="titles m-bottom">Bill</p>
+              <input
+                type="text"
+                name="bill-field"
+                id="bill-field"
+                placeholder="0"
+              />
+            </div>
+            <div class="tip-box">
+              <p class="titles m-bottom">Select Tip %</p>
+              <div class="tip-box-1 m-bottom">
+                <button class="btn-tip">5%</button>
+                <button class="btn-tip">10%</button>
+                <button class="btn-tip">15%</button>
+              </div>
+              <div class="tip-box-1">
+                <button class="btn-tip">25%</button>
+                <button class="btn-tip">50%</button>
+                <button class="btn-tip-custom">Custom</button>
+              </div>
+            </div>
+            <div class="nmb-people-box">
+              <p class="titles m-bottom">Number of People</p>
+              <input type="text" name="people" id="people" placeholder="0" />
+            </div>
+          </section>
+          <section class="box-2">
+            <div class="total-box">
+              <p class="titles-2">
+                Tip Amount <br />
+                <span>/ person</span>
+              </p>
+              <input
+                type="text"
+                name="tip-amount"
+                id="tip-amount"
+                placeholder="$0.00"
+              />
+            </div>
+            <div class="total-box">
+              <p class="titles-2">
+                Total <br />
+                <span>/ person</span>
+              </p>
+              <input type="text" name="total" id="total" placeholder="$0.00" />
+            </div>
+            <button class="reset">RESET</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/giovanna-mrosa">Giovanna Rosa</a>.
+    </div>
+  </body>
+</html>
