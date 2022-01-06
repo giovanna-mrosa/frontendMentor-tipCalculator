@@ -51,8 +51,6 @@ main {
   flex-direction: column;
   height: 375px;
   width: 410px;
-  margin-left: 5px;
-  margin-top: 10px;
   justify-content: space-around;
 }
 
@@ -100,6 +98,7 @@ main {
 .tip-box-1 {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .m-bottom {
@@ -119,6 +118,7 @@ main {
   font-weight: 700;
   cursor: pointer;
   transition: transform 500ms ease;
+  min-width: 115px;
 }
 
 .btn-tip:hover {
@@ -159,31 +159,22 @@ main {
   height: 375px;
   width: 410px;
   border-radius: 18px;
-  margin-left: 5px;
-  margin-top: 10px;
   align-items: center;
 }
 
 .total-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 40px 0 40px;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.total-box input {
-  border: none;
-  outline: none;
+.total-tip,
+.total {
   font-size: 48px;
-  font-family: 'Space Mono', sans-serif;
   font-weight: 700;
-  background: none;
-  width: 60%;
   text-align: end;
-  color: #1dbfa7;
-}
-
-.total-box input::placeholder {
   color: #1dbfa7;
 }
 
@@ -217,7 +208,7 @@ main {
 }
 
 .reset:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: #1dbfa7;
 }
 
@@ -247,4 +238,48 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    margin-bottom: 30px;
+  }
+  .main-box {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .box-1 {
+    width: 355px;
+    margin-top: 20px;
+  }
+  .btn-tip {
+    width: 170px;
+  }
+  .tip-custom {
+    width: 46%;
+  }
+  .box-2 {
+    height: 250px;
+    width: 355px;
+    margin-bottom: 20px;
+  }
+  .total-box {
+    margin-top: 16px;
+  }
+
+  .reset {
+    width: 305px;
+    margin-top: 10px;
+  }
+  .bill-box input,
+  .nmb-people-box input {
+    width: 345px;
+  }
+  .total-tip,
+  .total {
+    font-size: 45px;
+  }
+  .attribution {
+    padding-top: 5px;
+  }
 }

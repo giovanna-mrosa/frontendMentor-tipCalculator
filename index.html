@@ -25,19 +25,19 @@
                 name="bill-amt"
                 id="bill-amt"
                 placeholder="0"
+                required
               />
             </div>
             <div class="tip-box">
               <p class="titles m-bottom">Select Tip %</p>
               <div class="tip-box-1 m-bottom">
-                <button class="btn-tip">5%</button>
-                <button class="btn-tip">10%</button>
-                <button class="btn-tip">15%</button>
-              </div>
-              <div class="tip-box-1">
-                <button class="btn-tip">25%</button>
-                <button class="btn-tip">50%</button>
-                <input type="text" class="tip-custom" placeholder="Custom"></input>
+                <button class="btn-tip tip1">5%</button>
+                <button class="btn-tip tip2">10%</button>
+                <button class="btn-tip tip3">15%</button>
+             
+                <button class="btn-tip tip4">25%</button>
+                <button class="btn-tip tip5">50%</button>
+                <input type="text" class="tip-custom tip6" placeholder="Custom"></input>
               </div>
             </div>
             <div class="nmb-people-box">
@@ -47,6 +47,7 @@
                 name="people-amt"
                 id="people-amt"
                 placeholder="0"
+                required
               />
             </div>
           </section>
@@ -56,19 +57,14 @@
                 Tip Amount <br />
                 <span>/ person</span>
               </p>
-              <input
-                type="number"
-                name="tip-amount"
-                id="tip-amount"
-                placeholder="$0.00"
-              />
+              <p id="total-tip" class="total-tip">$0.00</p>
             </div>
             <div class="total-box">
               <p class="titles-2">
                 Total <br />
                 <span>/ person</span>
               </p>
-              <input type="number" name="total" id="total" placeholder="$0.00" />
+              <p id="total" class="total">$0.00</p>
             </div>
             <button class="reset">RESET</button>
           </section>
