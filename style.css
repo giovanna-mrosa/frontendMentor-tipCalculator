@@ -61,10 +61,11 @@ main {
   color: var(--dark-grayish-cyan1);
 }
 
-.box-1 input {
+.bill-box input,
+.nmb-people-box input {
   font-family: 'Space Mono', sans-serif;
   width: 380px;
-  height: 45px;
+  height: 40px;
   font-size: 24px;
   text-align: end;
   background-image: url(./images/icon-dollar.svg);
@@ -80,7 +81,12 @@ main {
   color: var(--very-dark-cyan);
 }
 
-#people {
+.bill-box input:focus,
+.nmb-people-box input:focus {
+  outline: 2px solid #1dbfa7;
+}
+
+#people-amt {
   background-image: url(./images/icon-person.svg);
   background-repeat: no-repeat;
   background-position-y: center;
@@ -104,7 +110,7 @@ main {
   font-family: 'Space Mono', sans-serif;
   background: var(--very-dark-cyan);
   width: 115px;
-  height: 45px;
+  height: 40px;
   border-radius: 4px;
   border: none;
   outline: none;
@@ -126,30 +132,24 @@ main {
   color: var(--very-dark-cyan);
 }
 
-.btn-tip-custom {
+.tip-custom {
   font-family: 'Space Mono', sans-serif;
   background: var(--light-grayish-cyan2);
-  width: 115px;
-  height: 45px;
+  width: 28%;
+  height: 40px;
   border: none;
   border-radius: 4px;
   outline: none;
   font-size: 25px;
-  color: var(--dark-grayish-cyan1);
+  color: var(--very-dark-cyan);
   font-weight: 700;
   cursor: pointer;
   transition: transform 500ms ease;
+  text-align: center;
 }
 
-.btn-tip-custom:hover {
-  transform: scale(1.05);
-  background-color: var(--light-grayish-cyan1);
-  color: var(--very-dark-cyan);
-}
-
-.btn-tip-custom:focus {
-  background-color: var(--light-grayish-cyan1);
-  color: var(--very-dark-cyan);
+.tip-custom:focus {
+  outline: 2px solid #1dbfa7;
 }
 
 .box-2 {
@@ -202,7 +202,7 @@ main {
 
 .reset {
   width: 330px;
-  height: 50px;
+  height: 40px;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -210,7 +210,7 @@ main {
   font-family: 'Space Mono', sans-serif;
   background-color: #0d686d;
   color: var(--very-dark-cyan);
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: 19px;
   font-weight: 700;
   transition: transform 500ms ease;
@@ -241,4 +241,10 @@ main {
 }
 .attribution a:hover {
   text-decoration: underline;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
